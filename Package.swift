@@ -8,7 +8,7 @@ let package = Package(
         .executable(name: "ReverseJson", targets: ["ReverseJson"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/tomquist/CoreJSON.git", from: "2.0.0")
+        .package(url: "https://github.com/tomquist/CoreJSON.git", .upToNextMinor(from: "2.0.0"))
     ],
     targets: [
         .target(name: "ReverseJsonCore", dependencies: ["CoreJSON"]),
